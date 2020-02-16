@@ -1,0 +1,36 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: $text;
+  }
+  a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+  }
+  ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .container{
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .title{
+    font-family: 'Abel', sans-serif;
+    color: #fff;
+    font-size: 48px;
+    text-transform: uppercase;
+  }
