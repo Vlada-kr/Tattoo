@@ -182,7 +182,7 @@
 }
 .title {
   text-transform: uppercase;
-  color: #000;
+  color: $black;
   font-size: 48px;
   font-family: "Abel", sans-serif;
   position: relative;
@@ -217,7 +217,7 @@
       position: absolute;
       left: 0;
       top: -248px;
-      background-color: #f2f2f2;
+      background-color: $gray;
     }*/
 }
 .services__topbox {
@@ -240,7 +240,7 @@
     position: relative;
     width: 265px;
     height: 260px;
-    border: 10px solid #f2f2f2;
+    border: 10px solid $gray;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -260,7 +260,7 @@
     align-items: center;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     a {
-      color: #000;
+      color: $black;
       text-transform: uppercase;
       font-weight: 300;
       font-size: 26px;
@@ -371,7 +371,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 4px solid #212121;
+  border: 4px solid $black;
   border-radius: 4px;
   width: 93px;
   height: 85px;
@@ -384,7 +384,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 10px solid #212121;
+  border: 10px solid $black;
   width: 555px;
   height: 500px;
   &:hover {
@@ -392,3 +392,160 @@
   }
 }
 //end about
+
+//start price
+.price {
+  padding: 170px 0 100px;
+  &-title {
+    color: $black;
+    margin-bottom: 27px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__text {
+    line-height: 26px;
+    margin-bottom: 75px;
+  }
+}
+.price__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.price__content {
+  max-width: 530px;
+}
+
+.price__menu {
+  .active {
+    &::before {
+      background-color: #fff;
+    }
+    a {
+      color: #fff;
+      background-color: $red;
+      &::before {
+        background-color: $red;
+      }
+      &::after {
+        border-top: 7px solid $red;
+        border-right: 7px solid $red;
+      }
+    }
+  }
+  li {
+    max-width: 420px;
+    position: relative;
+    & + li {
+      margin-top: 25px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 22px;
+      background-color: $red;
+      width: 4px;
+      height: 30px;
+      z-index: 4;
+    }
+  }
+  a {
+    font-size: 26px;
+    font-family: "Abel", sans-serif;
+    color: #222222;
+    text-transform: uppercase;
+    background-color: $gray;
+    width: 420px;
+    line-height: 74px;
+    padding-left: 27px;
+    position: relative;
+    &::before {
+      content: "";
+      background-color: $gray;
+      width: 52px;
+      height: 52px;
+      position: absolute;
+      right: -26px;
+      top: 11px;
+      bottom: 0;
+      transform: rotate(45deg);
+    }
+    &::after {
+      content: "";
+      background-color: transparent;
+      width: 52px;
+      height: 52px;
+      position: absolute;
+      right: -50px;
+      top: 10px;
+      border-top: 7px solid $gray;
+      bottom: 0;
+      border-right: 7px solid $gray;
+      transform: rotate(45deg);
+    }
+  }
+}
+#piercings {
+  display: block;
+}
+.price__list-top {
+  position: relative;
+
+  .price__name {
+    position: absolute;
+    top: -123px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-transform: uppercase;
+    color: #212121;
+    background-color: #fff;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.3);
+    font-family: "Abel", sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    width: 210px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.price__list {
+  height: 100%;
+  display: none;
+  width: 555px;
+  background-color: #fff;
+  border: 10px solid $gray;
+  padding: 90px 50px 65px;
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  &-name {
+    font-family: "Abel", sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: $black;
+  }
+  &-text {
+    line-height: 26px;
+  }
+  &-price {
+    font-family: "Abel", sans-serif;
+    font-size: 30px;
+    color: #fff;
+    background-color: $black;
+    border-radius: 50%;
+    padding: 23px 17px;
+  }
+}
+
+//end price

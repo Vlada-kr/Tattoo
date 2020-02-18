@@ -34,4 +34,18 @@ $(function () {
         autoplaySpeed: 3000,
     });
 
+    $('.price__menu li').on('click', function(e) {
+        e.preventDefault();
+        $(".price__menu li").removeClass('active');
+            $(this).addClass('active');
+    });  
+    $('.link').on('click', function(e) {
+        e.preventDefault();
+        $('.price__list').each(function() {
+            $(this).css('display', 'none');
+        });
+        var block = $(this).attr('href');
+        $(block).css('display', 'block');
+    });     
+   
 });
