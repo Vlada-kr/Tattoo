@@ -24,7 +24,7 @@ html {
     list-style: none;
   }
   .container{
-    max-width: 1140px;
+    max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
   }
@@ -33,4 +33,18 @@ html {
     color: #fff;
     font-size: 48px;
     text-transform: uppercase;
+  }
+  .black{
+    position: relative;
+    z-index: -1;
+    &::before{
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
   }
