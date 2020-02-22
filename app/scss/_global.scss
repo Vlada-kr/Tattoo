@@ -12,6 +12,7 @@ html {
     font-weight: 400;
     font-size: 16px;
     color: $text;
+    overflow-x: hidden;
   }
   a{
     display: inline-block;
@@ -27,6 +28,10 @@ html {
     max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
+  }
+  .container__fluid{
+    padding: 0 50px;
+    
   }
   .title{
     font-family: 'Abel', sans-serif;
