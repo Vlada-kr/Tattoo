@@ -41,7 +41,7 @@
     }
   }
   &-content {
-    max-width: 535px;
+    max-width: 820px;
     margin: 0 auto;
     z-index: 4;
     position: absolute;
@@ -51,7 +51,7 @@
     text-align: center;
   }
   &-title {
-    font-family: "Abel", sans-serif;
+    font-family: "Open Sans";
     font-size: 60px;
     color: #fff;
     text-transform: uppercase;
@@ -184,7 +184,7 @@
   text-transform: uppercase;
   color: $black;
   font-size: 48px;
-  font-family: "Abel", sans-serif;
+  font-family: "Open Sans";
   position: relative;
   span {
     color: $red;
@@ -195,12 +195,13 @@
 }
 .services__box {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .content__line {
   max-width: 540px;
   position: relative;
+  padding-top: 46px;
   /*&::before {
       content: "";
       position: absolute;
@@ -263,8 +264,9 @@
       color: $black;
       text-transform: uppercase;
       font-weight: 300;
-      font-size: 26px;
-      font-family: "Abel", sans-serif;
+      font-size: 20px;
+      font-family: "Open Sans";
+      text-align: center;
     }
   }
 }
@@ -287,7 +289,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 920px;
-  padding: 120px 0 160px;
+  padding: 140px 0 160px;
   background-color: #5d5d5c;
   position: relative;
   &::before {
@@ -307,6 +309,16 @@
   .slick-list {
     width: 560px;
   }
+  .title {
+    &::after {
+      right: 0;
+      left: auto;
+      background-color: #3d3d3d;
+    }
+    &::before {
+      right: 0;
+    }
+  }
 }
 
 .about__content {
@@ -321,7 +333,7 @@
     margin-bottom: 60px;
   }
   &-subtitle {
-    font-family: "Abel", sans-serif;
+    font-family: "Open Sans";
     text-transform: uppercase;
     color: #fff;
     font-size: 28px;
@@ -337,7 +349,7 @@
   }
   &-author {
     font-size: 22px;
-    font-family: "Abel", sans-serif;
+    font-family: "Open Sans";
     position: relative;
     display: inline-block;
     &::before {
@@ -395,7 +407,7 @@
 
 //start price
 .price {
-  padding: 170px 0 100px;
+  padding: 186px 0 100px;
   &-title {
     color: $black;
     margin-bottom: 27px;
@@ -454,8 +466,8 @@
     }
   }
   a {
-    font-size: 26px;
-    font-family: "Abel", sans-serif;
+    font-size: 24px;
+    font-family: "Open Sans";
     color: #222222;
     text-transform: uppercase;
     background-color: $gray;
@@ -505,14 +517,15 @@
     color: #212121;
     background-color: #fff;
     box-shadow: 0 0px 20px rgba(0, 0, 0, 0.3);
-    font-family: "Abel", sans-serif;
+    font-family: "Open Sans";
     font-weight: 300;
-    font-size: 26px;
+    font-size: 20px;
     width: 210px;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 }
 .price__list {
@@ -528,18 +541,22 @@
     align-items: center;
     margin-bottom: 25px;
   }
+  &-box {
+    margin-right: 10px;
+  }
   &-name {
-    font-family: "Abel", sans-serif;
+    font-family: "Open Sans";
     font-weight: 300;
-    font-size: 26px;
+    font-size: 24px;
     text-transform: uppercase;
     color: $black;
   }
   &-text {
-    line-height: 26px;
+    line-height: 23px;
+    font-size: 16px;
   }
   &-price {
-    font-family: "Abel", sans-serif;
+    font-family: "Open Sans";
     font-size: 30px;
     color: #fff;
     background-color: $black;
@@ -553,7 +570,7 @@
 //start statistics
 .statistics {
   z-index: 0;
-  padding: 180px 0 100px;
+  padding: 93px 0 93px;
   min-height: 355px;
   background-image: url(../images/bg-3.jpg);
   background-repeat: no-repeat;
@@ -579,17 +596,17 @@
 }
 .statistics__item {
   text-align: center;
-  max-width: 20%;
+  max-width: 220px;
+  width: 100%;
   position: relative;
-  &::before {
-    content: url(../images/2.png);
-    position: absolute;
-    top: -90px;
-    right: -10px;
-  }
+  background-image: url(../images/2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 95px;
   &-number {
     color: $red;
-    font-family: "Abel", sans-serif;
+    font-family: "Open Sans";
     font-size: 48px;
     font-weight: 600;
   }
@@ -602,7 +619,7 @@
 
 //start works
 .works {
-  padding: 145px 0 40px;
+  padding: 168px 0 40px;
   &__box {
     display: flex;
     justify-content: space-between;
@@ -617,12 +634,21 @@
   &-title {
     margin-bottom: 30px;
   }
+  .title {
+    &::after {
+      right: 0;
+      left: auto;
+    }
+    &::before {
+      right: 0;
+    }
+  }
 }
 .works__list {
   min-width: 500px;
   color: $black;
   text-transform: uppercase;
-  font-family: "Abel", sans-serif;
+  font-family: "Open Sans";
   font-size: 30px;
   a {
     padding-left: 15px;
@@ -648,17 +674,22 @@
 .works__gallery {
   margin-top: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  margin-left: -30px;
+  width: 100%;
   &-img {
     overflow: hidden;
-    width: 360px;
+    max-width: 360px;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 340px;
     border: 10px solid $gray;
     margin-bottom: 30px;
+    flex-basis: calc(33.33% - 30px);
+    margin-left: 30px;
     /*transition: all 0.5s;*/
     img {
       /* transition: all 0.5s;*/
@@ -680,7 +711,7 @@
   background-size: cover;
   background-position: center;
   min-height: 700px;
-  padding: 185px 0 100px;
+  padding: 186px 0 100px;
   position: relative;
   z-index: 2;
   &::before {
@@ -696,17 +727,27 @@
   &__title {
     color: #fff;
   }
+  .title {
+    &::after {
+      background-color: #3d3d3d;
+    }
+  }
 }
 .shop__box {
   display: flex;
   justify-content: space-between;
   margin-bottom: 55px;
 }
+.shop__title {
+  margin-bottom: 30px;
+}
 .shop__text {
   max-width: 530px;
   line-height: 26px;
 }
 .shop__inner {
+  width: 100%;
+  max-width: 430px;
   position: relative;
   &::before {
     content: "";
@@ -721,16 +762,19 @@
   }
   &-select {
     display: inline-block;
-    width: 430px;
+    max-width: 430px;
+    width: 100%;
   }
   select {
-    width: 430px;
+    max-width: 430px;
+    width: 100%;
     height: 50px;
-    background: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: $text;
     font-size: 14px;
     padding-left: 20px;
+    border-radius: 0px;
   }
   a {
     display: inline-block;
@@ -754,6 +798,7 @@
   width: 263px;
 }
 .shop__slider-item {
+  max-width: 269px;
   padding: 0 11px;
   &:hover {
     .shop__item-price {
@@ -767,7 +812,7 @@
 }
 .shop__item-img {
   position: relative;
-  width: 269px;
+  max-width: 269px;
   height: 263px;
   background-position: center;
   background-repeat: no-repeat;
@@ -800,7 +845,7 @@
 .shop__item-price {
   position: absolute;
   font-size: 26px;
-  font-family: "Abel", sans-serif;
+  font-family: "Open Sans";
   color: #212121;
   background-color: #fff;
   width: 100px;
@@ -816,7 +861,7 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 .shop__item-name {
-  font-family: "Abel", sans-serif;
+  font-family: "Open Sans";
   font-size: 30px;
   color: $black;
   margin-bottom: 20px;
@@ -887,7 +932,7 @@
   }
 }
 .subscribe__title {
-  font-family: "Abel", sans-serif;
+  font-family: "Open Sans";
   text-transform: uppercase;
   font-size: 36px;
   font-weight: 600;
@@ -924,7 +969,16 @@
 //start team
 
 .team {
-  padding: 145px 0 100px;
+  padding: 186px 0 100px;
+  .title {
+    &::after {
+      right: 0;
+      left: auto;
+    }
+    &::before {
+      right: 0;
+    }
+  }
 }
 .team__descr {
   text-align: right;
@@ -940,11 +994,13 @@
 }
 .team__items {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  margin-left: -30px;
 }
 .team__item {
-  width: 360px;
+  margin-left: 30px;
+  flex-basis: calc(33.3% - 30px);
   text-align: center;
   border: 10px solid $gray;
   transition: all 0.3s;
@@ -955,12 +1011,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 340px;
     height: 315px;
     margin-bottom: 45px;
   }
   &-name {
-    font-family: "Abel", sans-serif;
+    font-family: "Open Sans";
     font-weight: 600;
     color: $black;
     text-transform: uppercase;
@@ -1004,7 +1059,7 @@
 //start clients
 .clients {
   min-height: 745px;
-  padding: 185px 0 100px;
+  padding: 186px 0 100px;
   background-image: url(../images/clients_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1021,14 +1076,19 @@
     background: rgba(0, 0, 0, 0.8);
     z-index: -1;
   }
+  .title {
+    &::after {
+      background-color: #3d3d3d;
+    }
+  }
 }
 .clients__title {
   color: #fff;
 }
 .clients__review {
   display: block;
-  width: 730px;
-  padding: 105px 130px 105px 90px;
+  max-width: 730px;
+  padding: 30px 38px 30px 30px;
   background: rgba(255, 255, 255, 0.05);
   &-text {
     font-size: 20px;
@@ -1039,7 +1099,7 @@
   }
   &-author {
     color: #fff;
-    font-family: "Abel", sans-serif;
+    font-family: "Open Sans";
     font-size: 22px;
     span {
       color: $red;
@@ -1079,7 +1139,8 @@
     background-color: $red;
     width: 63px;
     height: 56px;
-    top: 280px;
+    top: 281px;
+    bottom: 0;
     z-index: 5;
     cursor: pointer;
   }
@@ -1124,7 +1185,16 @@
 
 //start contacts
 .contact {
-  padding: 170px 0 100px;
+  padding: 187px 0 100px;
+  .title {
+    &::after {
+      right: 0;
+      left: auto;
+    }
+    &::before {
+      right: 0;
+    }
+  }
 }
 .contact__inner {
   display: flex;
@@ -1135,7 +1205,7 @@
   margin-left: auto;
 }
 .contact__info {
-  width: 504px;
+  max-width: 504px;
 }
 .contact__list-item {
   display: flex;
@@ -1146,15 +1216,16 @@
   margin-bottom: 40px;
 }
 .contact__item-name {
-  font-family: "Abel", sans-serif;
+  font-family: "Open Sans";
   color: $black;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 500;
   display: inline-block;
   width: 300px;
   margin-right: 20px;
   a {
     color: $black;
+    display: block;
   }
 }
 .contact__item-img {
@@ -1178,7 +1249,8 @@
 
 .contact__form {
   border: 10px solid $gray;
-  width: 555px;
+  max-width: 555px;
+  width: 1005px;
   text-align: center;
   padding: 80px 0 50px;
   position: relative;
@@ -1193,7 +1265,7 @@
     height: 60px;
     line-height: 60px;
     box-shadow: 0 0px 20px rgba(0, 0, 0, 0.3);
-    font-family: "Abel", sans-serif;
+    font-family: "Open Sans";
     font-weight: 300;
     color: $black;
     font-size: 26px;
@@ -1204,7 +1276,6 @@
     color: $text;
     margin: 0 auto;
     width: 100%;
-    line-height: 50px;
     height: 50px;
     border: 1px solid #f2f2f2;
     background-color: transparent;
@@ -1214,13 +1285,14 @@
     outline-color: $red;
   }
   .date {
-    margin-right: 20px;
+    margin-right: 10px;
   }
   .date,
   .time {
     max-width: 215px;
     display: inline-block;
     color: $text;
+    padding: 10px 20px;
   }
   .name,
   .email,
@@ -1286,9 +1358,9 @@
     width: 100px;
   }
   &-text {
-    font-family: "Abel", sans-serif;
+    font-family: "Open Sans";
     color: #fff;
-    font-size: 48px;
+    font-size: 35px;
     font-weight: 600;
   }
 }
@@ -1296,7 +1368,7 @@
 
 //start blog
 .blog {
-  padding: 140px 0 55px;
+  padding: 187px 0 55px;
 }
 .blog {
   .shop__inner {
@@ -1331,7 +1403,7 @@
   text-transform: uppercase;
   color: $black;
   transition: all 0.3s;
-  font-family: "Abel", sans-serif;
+  font-family: "Open Sans";
   font-size: 28px;
   margin-bottom: 15px;
   cursor: pointer;
@@ -1428,7 +1500,7 @@
 }
 .footer__name {
   padding-left: 20px;
-  font-family: "Abel", sans-serif;
+  font-family: "Open Sans";
   font-size: 30px;
   display: block;
   text-transform: uppercase;
@@ -1448,7 +1520,7 @@
 .footer__about-form {
   position: relative;
   label {
-    font-family: "Abel", sans-serif;
+    font-family: "Open Sans";
     color: $red;
     font-weight: 400;
     font-size: 20px;
@@ -1521,10 +1593,13 @@
 }
 .footer__instagram-galery {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  margin-left: -15px;
 }
 .footer__galery-item {
+  flex-basis: calc(33.3% - 15px);
+  margin-left: 15px;
   border: 5px solid $black;
   background-position: center;
   background-size: cover;
@@ -1561,9 +1636,11 @@
   a {
     color: $text;
     line-height: 80px;
-    &:hover{
+    &:hover {
       color: $red;
     }
   }
 }
 //end foooter
+
+@import "media.scss";

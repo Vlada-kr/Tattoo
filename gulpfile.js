@@ -65,7 +65,8 @@ gulp.task('browser-sync', function () {
     browserSync.init({
         server: {
             baseDir: "app/"
-        }
+        },
+        host: "192.168.0.103"
     });
 });
 
